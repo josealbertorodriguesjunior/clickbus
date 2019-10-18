@@ -11,5 +11,4 @@ public class ClickbusApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ClickbusApplication.class, args);
 	}
-
 }
