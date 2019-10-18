@@ -7,6 +7,38 @@ Test for a clickbus backend position
 If you're using [Insomnia](https://insomnia.rest/download/) to test the endpoints, you could get the json file inside the folder ```./requests-insomnia```
 and import to make it easy :) 
 - `GET` [/api/places](https://clickbus-backend.herokuapp.com/api/places) - Return all places saved 
+```
+response:
+[
+  {
+    "id": 1,
+    "name": "Ubatuba",
+    "slug": "Taubatexas, wild way always",
+    "city": "Ubatuba",
+    "state": "SP",
+    "created_at": "2019-10-18T01:01:54.058+0000",
+    "updated_at": "2019-10-18T01:01:54.058+0000"
+  },
+  {
+    "id": 2,
+    "name": "Ubatuba",
+    "slug": "Taubatexas, wild way always",
+    "city": "Ubatuba",
+    "state": "SP",
+    "created_at": "2019-10-18T01:02:01.432+0000",
+    "updated_at": "2019-10-18T01:02:01.432+0000"
+  },
+  {
+    "id": 3,
+    "name": "Ubatuba",
+    "slug": "Taubatexas, wild way always",
+    "city": "Ubatuba",
+    "state": "SP",
+    "created_at": "2019-10-18T01:11:53.737+0000",
+    "updated_at": "2019-10-18T01:11:53.737+0000"
+  }
+]
+```
 - `POST` [/api/create/place](https://clickbus-backend.herokuapp.com/api/create/place) - To create a new place you must to post a json with the payload like this:
 ```
     {
