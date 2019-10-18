@@ -42,7 +42,7 @@ public class ClickbusApplicationTests {
 	}
 
 	@Test
-	public void getPlaceName(){
+	public void getPlaceName() {
 		List<PlaceModel> places = placeController.getPlacesFilteredByName("Ubatuba");
 		assertThat(places.get(0).getName().equals("Ubatuba"));
 	}
