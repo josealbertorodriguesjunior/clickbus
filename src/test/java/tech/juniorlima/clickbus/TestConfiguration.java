@@ -13,7 +13,7 @@ public class TestConfiguration {
 
   @Bean
   public PlaceModel mockedPlace() throws IOException {
-    String order = TestUtils.loadFileJson("payload.json");
-    return mapper.readValue(order, PlaceModel.class);
+    String place = TestUtils.loadFileJson("payload.json");
+    return mapper.readValue(place, PlaceModel.class);
   }
 }
